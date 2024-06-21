@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Internal Style Sheet Link -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- BootStrap Style Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <h1>AgriTech</h1>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#service"><li>Services</li></a>
+            <a href="#article"><li>Article</li></a>
+            <a href="#about"><li>About Us</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="auth">
+          <button id="sign-in">Sign In</button>
+          <button id="sign-up">Sign Up</button>
+        </div>
+        <div class="toggle-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div id="hero-content">
+          <h1>Driving Agricultural Evolution with Innovation</h1>
+          <br />
+          <p id="hero-content-extra">
+            Innovation is driving the evolution of agriculture for greater
+            productivity and sustainability.
+          </p>
+        </div>
+        <div class="btn">
+          <button id="join">
+            Join Now<i class="fa-solid fa-circle-arrow-right"></i>
+          </button>
+          <button id="learnSer">Learn Services</button>
+        </div>
+      </section>
+    </main>
+
+    <article>
+      <section id="service" class="services">
+        <div class="our-customers">
+          <h3>Trusted by thousand companies in the world</h3>
+          <img src="./images/papa.svg" alt="" />
+          <img src="./images/amazon.svg" alt="" />
+          <img src="./images/tesla.svg" alt="" />
+          <img src="./images/notion.svg" alt="" />
+        </div>
+        <div class="Info">
+          <h3>
+            We provide a variety of services that are flexible and tailored to
+            your needs. We are committed to providing
+            <span>
+              the best experience and ensuring unmatched customer
+              satisfaction</span
+            >
+          </h3>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="navigation">
+          <ul>
+            <li id="allLink" onclick="updateContent('ALL')">// All</li>
+            <li id="companyLink" onclick="updateContent('Company')">
+              // Company
+            </li>
+            <li id="individualLink" onclick="updateContent('Individual')">
+              // Individual
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3 id="content-heading"></h3>
+          <div id="accordian"></div>
+          <div id="cards"></div>
+        </div>
+      </section>
+
+      <section id="article" class="articles">
+        <div id="head-section">
+          <h1>
+            Find a variety of the latest information about agriculture on
+            Agrispedia.
+          </h1>
+          <p>
+            Collaborate, discuss, share knowledge, and enjoy interesting stories
+            about agricultural, fisheries and livestock commodities on the
+            Agricultural Cultivation Community platform, which is the largest in
+            Indonesia.
+          </p>
+          <div class="slider-btn">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="article-shorts">
+          <div class="article-carousel">
+            <div class="article-summary">
+              <img src="./images/articalimg1.png" alt="" />
+              <div class="caption">
+                <h4>Strategies for Agricultural Land Yield Enhancement.</h4>
+                <p>
+                  Effective strategles to increase agricultural ylelds with
+                  sustainability.
+                </p>
+                <button id="card-btn">
+                  Read More<i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="article-summary">
+              <img src="./images/articalimg2.png" alt="" />
+              <div class="caption">
+                <h4>
+                  Towards efficient and environmentally friendly agriculture.
+                </h4>
+                <p>
+                  Increase ylelds without using excessive pesticides by applying
+                  modern cultivation methods.
+                </p>
+                <button id="card-btn">
+                  Read More<i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="article-summary">
+              <img src="./images/articalimg3.png" alt="" />
+              <div class="caption">
+                <h4>The Latest Innovations in the World of Agriculture.</h4>
+                <p>
+                  The world of agriculture evolves with cutting-edge
+                  innovations, revolutionizing practices.
+                </p>
+                <button id="card-btn">
+                  Read More<i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="article-summary">
+              <img src="./images/articalimg1.png" alt="" />
+              <div class="caption">
+                <h4>Strategies for Agricultural Land Yield Enhancement.</h4>
+                <p>
+                  Effective strategles to increase agricultural ylelds with
+                  sustainability.
+                </p>
+                <button id="card-btn">
+                  Read More<i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="article-summary">
+              <img src="./images/articalimg2.png" alt="" />
+              <div class="caption">
+                <h4>
+                  Towards efficient and environmentally friendly agriculture.
+                </h4>
+                <p>
+                  Increase ylelds without using excessive pesticides by applying
+                  modern cultivation methods.
+                </p>
+                <button id="card-btn">
+                  Read More<i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="article-summary">
+              <img src="./images/articalimg3.png" alt="" />
+              <div class="caption">
+                <h4>The Latest Innovations in the World of Agriculture.</h4>
+                <p>
+                  The world of agriculture evolves with cutting-edge
+                  innovations, revolutionizing practices.
+                </p>
+                <button id="card-btn">
+                  Read More<i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="achivements">
+        <div class="achivement-title">
+          Improving agriculture through innovative ideas.
+        </div>
+        <div id="analyatics">
+          <div id="cultivators">
+            <p>71K</p>
+            <span>Cultivators have joined agriswara</span>
+          </div>
+          <div id="companies">
+            <p>250+</p>
+            <span>Agribusiness companies that have collaborated.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h3>What Customer Says</h3>
+
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="upper">
+                <div class="img">
+                  <img src="./imagesa/img-1.jpg" alt="img" draggable="false" />
+                </div>
+                <div class="details">
+                  <h2>Blanche Pearson</h2>
+                  <span>Sales Manager</span>
+                </div>
+              </div>
+              <div class="lower">
+                <p>
+                  "This website has given me deeper insight into the latest
+                  farming techniques and practices."
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="upper">
+                <div class="img">
+                  <img src="./imagesa/img-2.jpg" alt="img" draggable="false" />
+                </div>
+                <div class="details">
+                  <h2>Joenas Brauers</h2>
+                  <span>Web Developer</span>
+                </div>
+              </div>
+              <div class="lower">
+                <p>
+                  "This website has given me deeper insight into the latest
+                  farming techniques and practices."
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="upper">
+                <div class="img">
+                  <img src="./imagesa/img-3.jpg" alt="img" draggable="false" />
+                </div>
+                <div class="details">
+                  <h2>Lariach French</h2>
+                  <span>Online Teacher</span>
+                </div>
+              </div>
+              <div class="lower">
+                <p>
+                  "This website has given me deeper insight into the latest
+                  farming techniques and practices."
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="upper">
+                <div class="img">
+                  <img src="./imagesa/img-4.jpg" alt="img" draggable="false" />
+                </div>
+                <div class="details">
+                  <h2>James Khosravi</h2>
+                  <span>Freelancer</span>
+                </div>
+              </div>
+              <div class="lower">
+                <p>
+                  "This website has given me deeper insight into the latest
+                  farming techniques and practices."
+                </p>
+              </div>
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <p>Get involved in the agricultural uprising</p>
+        <form action="" class="input-wrapper">
+          <input type="text" placeholder="Type your email address" />
+          <button>
+            Join Now<i class="fa-solid fa-circle-arrow-right"></i>
+          </button>
+        </form>
+      </section>
+    </article>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="company">
+          <span id="logo"><i class="fa-solid fa-leaf"></i> Agriswara </span>
+          <p>
+            Rajawali street No.45, Magelang New City, Central Java 6725
+            Indonesia
+          </p>
+          <div class="social-icon">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+
+        <div class="company-style">
+          <h5>Company Category</h5>
+          <ul>
+            <li>Agribusiness</li>
+            <li>Financial Services</li>
+            <li>loT Service Provider</li>
+            <li>Educational institutions</li>
+          </ul>
+        </div>
+
+        <div class="company-style">
+          <h5>Individual Category</h5>
+          <ul>
+            <li>Cultivator</li>
+            <li>Agricultural Consumers</li>
+            <li>Agricultural Expert</li>
+          </ul>
+        </div>
+
+        <div class="company-style">
+          <h5>Services</h5>
+          <ul>
+            <li>Partner</li>
+            <li>Capital</li>
+            <li>Market</li>
+            <li>FarmingSmart</li>
+            <li>Agrispedia</li>
+          </ul>
+        </div>
+
+        <div class="company-style">
+          <h5>Company</h5>
+          <ul>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+      <div id="copy-right">
+        <p>&copy; 2024 AgriTech All right reserved</p>
+        <p>Privacy Policy Terms Of Use</p>
+      </div>
+    </footer>
+    <!-- All Required Internal And External Script -->
+    <script src="./JavaScript/Content.js" rel="text/javascript"></script>
+    <script src="./JavaScript/index.js" rel="text/javascript"></script>
+  </body>
+</html>
